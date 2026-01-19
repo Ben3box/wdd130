@@ -2,19 +2,21 @@ main{
    width: 840px;
   
 }
-aside{
-    width: 20rem;
-    margin: 1rem;
-border: 1px solid rgb(0 0 0 / 0.2);
-padding:1rem ;
-background:#eee ;
-color: #333;
-text-align: center;
-}
+
 
 p{
     padding: 0px;
 }
+nav{
+    background-color: #fff;
+    padding: 0px;
+}
+nav a{
+    padding: 0px;
+    color: #fff;
+    display: grid;
+}
+
 
 main{
      width: 840px;
@@ -25,9 +27,29 @@ background:#fff ;
 color: #333;
 text-align: center;
 }
+h1{
+    color: #000;
+}
+
+main img{
+     width: 2rem;
+     height: auto;
+    margin: 1rem;
+border: 0px solid rgb(0 0 0 / 0.2);
+padding:1rem ;
+box-shadow: none;
+}
+aside{
+    width: 20rem;
+    margin: 1rem;
+border: 1px solid rgb(0 0 0 / 0.2);
+padding:1rem ;
+background-color:#eee ;
+color: #333;
+}
 
 aside img{
-    width: 200;
+    width: 200px;
     height: auto;
 }
 main img{
