@@ -1,32 +1,26 @@
-main{
-   width: 840px;
-  
-}
-
-
-p{
-    padding: 0px;
-}
 nav{
     background-color: #fff;
     padding: 0px;
 }
+
 nav a{
     padding: 0px;
     color: #fff;
-    display: grid;
+    display: block;
 }
-
-
 main{
-     width: 840px;
-    margin: 1rem;
-border: 0px solid rgb(0 0 0 / 0.2);
-padding:1rem ;
-background:#fff ;
-color: #333;
-text-align: center;
+   width: 840px;
+  
 }
+main{
+    max-width: 840px;
+}
+
+p{
+    padding: 0px;
+}
+
+
 h1{
     color: #000;
 }
@@ -34,9 +28,8 @@ h1{
 main img{
      width: 2rem;
      height: auto;
-    margin: 1rem;
+   padding:1rem ;
 border: 0px solid rgb(0 0 0 / 0.2);
-padding:1rem ;
 box-shadow: none;
 }
 aside{
