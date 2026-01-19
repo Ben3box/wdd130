@@ -28,8 +28,8 @@ h1{
 main img{
      width: 2rem;
      height: auto;
+     border: #000;
    padding:1rem ;
-border: 0px solid rgb(0 0 0 / 0.2);
 box-shadow: none;
 }
 aside{
