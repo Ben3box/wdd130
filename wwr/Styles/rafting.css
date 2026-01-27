@@ -84,14 +84,17 @@ h1 {
     margin-top: 20px;
     clear: both;
 }
+.hero {
+    position: relative;
+}
 
-.hello article {
+.hero article {
     font-display: block;
     width: 100%;
     height: auto;
 }
 
-.hello article img {
+.hero article img {
     float: right;
     width: 125px;
     border: green;
