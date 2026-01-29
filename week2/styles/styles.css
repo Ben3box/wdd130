@@ -1,23 +1,58 @@
+nav{
+    background-color: #fff;
+    padding: 0px;
+}
+
+nav a{
+    padding: 0px;
+    color: #fff;
+    display: block;
+}
+main{
+   width: 840px;
+  
+}
+main{
+    max-width: 840px;
+}
+
+p{
+    padding: 0px;
+}
+
+
+h1{
+    color: #000;
+}
+
+main img{
+     width: 2rem;
+     height: auto;
+     border: #000;
+   padding:1rem ;
+box-shadow: none;
+}
 aside{
     width: 20rem;
     margin: 1rem;
 border: 1px solid rgb(0 0 0 / 0.2);
 padding:1rem ;
-background:#eee ;
+background-color:#eee ;
 color: #333;
-text-align: center;
 }
+
 aside img{
-    width: 200;
+    width: 200px;
     height: auto;
 }
-main img{
-    width: 150px;
-    height: auto;
-}
-aside p, main p{
+
+aside p{
     padding: 0px;
-    text-align: center;
+    text-align: justify;
+}
+main p{
+    padding: 0%;
+    text-align: justify;
 }
 footer{
     margin-top: 15px;
