@@ -6,6 +6,16 @@
     --heading-font:"Times New Roman","Georgia", serif;
     --body-font:Arial,Helvetica,sans-serif;
 }
+header {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    width: 100%;
+    max-width: 840px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 
 *{
     margin: 0;
@@ -22,28 +32,23 @@ header,main,footer{
     font-display: block;
    
 }
-header {width: 100%;
-    max-width: 840px;
-    padding-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
+
 .logo-container {
 margin-bottom: 15px;
 align-self: center;
 }
+fr9
 .logo {
     height: auto;
     width: 250px;
 }
-nav ul {
+nav {
     list-style-type: disc; /* Adds the bullet points seen in the image */
     padding-left: 20px;
     margin: 0 0 20px 0;
 }
 
-nav li {
+nav a {
     margin-bottom: 2px;
 }
 
@@ -57,15 +62,11 @@ nav, p, section, article {
     padding: 8px;
 }
 
-.socialmedia a {
-    text-decoration: none;
-}
-
-.hello{
+.hero{
     position: relative;
 }
 
-.hello img {
+.hero img {
     display: block;
     width: 100%;
     height: auto;
@@ -88,6 +89,12 @@ h1 {
     position: relative;
 }
 
+hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 .hero article {
     font-display: block;
     width: 100%;
@@ -100,4 +107,34 @@ h1 {
     border: green;
     margin: 1rem;
     box-shadow: #055a05;
+}
+
+footer {
+    background-color: #0b3c49;  /* couleur du footer */
+    color: white;               /* texte en blanc */
+    padding: 1rem 2rem;         /* espace interne */
+    display: flex;              /* pour aligner texte et icônes */
+    justify-content: space-between; /* espace entre texte et icônes */
+    align-items: center;        /* centrer verticalement */
+    flex-wrap: wrap;            /* s'adapte aux petits écrans */
+}
+.socialmedia {
+    display: flex;
+    flex-direction: column; /* vertical */
+    gap: 0.75rem;
+}
+
+.socialmedia a {
+    text-decoration: none;
+    display: flex;
+    gap: 1rem;
+}
+.socialmedia img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.socialmedia img:hover {
+    transform: scale(1.2);
 }
