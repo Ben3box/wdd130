@@ -30,6 +30,7 @@ header,main,footer{
     width: 840px;
     margin: 0 auto;
     font-display: block;
+    font-family: var(--body-font);
    
 }
 
