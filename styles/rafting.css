@@ -37,7 +37,7 @@ header,main,footer{
 margin-bottom: 15px;
 align-self: center;
 }
-fr9
+
 .logo {
     height: auto;
     width: 250px;
@@ -87,12 +87,24 @@ h1 {
 }
 .hero {
     position: relative;
+    width: 100%;
+    max-width: 840px; /* ou la largeur de ton image */
+    margin: 0 auto;
 }
 
 hero img {
     display: block;
     width: 100%;
     height: auto;
+}
+.hero h1 {
+    position: relative;  /* pour apparaître par-dessus l'image */
+   top: 20%;            /* distance depuis le haut */
+   left: 50%;           /* centré horizontalement */
+    transform: translateX(-50%);
+    color: white;        /* texte visible sur l'image */
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* pour contraste */
 }
 
 .hero article {
