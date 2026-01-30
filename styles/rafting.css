@@ -70,6 +70,7 @@ nav, p, section, article {
     display: block;
     width: 100%;
     height: auto;
+    box-shadow: 4px 4px 8px 055a05;
 }
 
 h1 {
