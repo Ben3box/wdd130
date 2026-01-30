@@ -131,6 +131,10 @@ footer {
     align-items: center;        /* centrer verticalement */
     flex-wrap: wrap;            /* s'adapte aux petits écrans */
 }
+footer p {
+    margin: 0;
+}
+
 .socialmedia {
     display: flex;
     flex-direction: column; /* vertical */
