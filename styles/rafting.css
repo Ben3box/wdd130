@@ -110,7 +110,7 @@ hero img {
 }
 
 footer {
-    background-color: #0b3c49;  /* couleur du footer */
+    background-color: var(--secondary-color);  /* couleur du footer */
     color: white;               /* texte en blanc */
     padding: 1rem 2rem;         /* espace interne */
     display: flex;              /* pour aligner texte et icônes */
