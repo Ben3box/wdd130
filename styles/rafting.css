@@ -98,7 +98,7 @@ hero img {
     height: auto;
 }
 .hero h1 {
-    position: relative;  /* pour apparaître par-dessus l'image */
+    position: absolute;  /* pour apparaître par-dessus l'image */
    top: 20%;            /* distance depuis le haut */
    left: 50%;           /* centré horizontalement */
     transform: translateX(-50%);
@@ -108,6 +108,7 @@ hero img {
 }
 
 .hero article {
+    position: absolute;
     font-display: block;
     width: 100%;
     height: auto;
