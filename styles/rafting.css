@@ -62,7 +62,7 @@ nav a:hover {
 /* Headings */
 h1, h2 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
+    color: var(--primary-color,#000);
     margin-bottom: 1rem;
 }
 
