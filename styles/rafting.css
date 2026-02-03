@@ -80,16 +80,11 @@ nav, p, section, article {
 }
 
 /* Image principale du hero */
-.hero > img {
+.hero img {
     display: block;
     width: 100%;
     height: auto;
     box-shadow: 4px 4px 8px #055a05;
-}
-
-.hero article img {
-    position: absolute;
-    left: 50%;
 }
 
 /* Hero heading overlay */
@@ -122,6 +117,8 @@ nav, p, section, article {
 
 /* Image intégrée dans l'article du hero */
 .hero article img {
+    position: absolute;
+    left: 50%;
     float: right;
     width: 125px;
     border: 2px solid green;
