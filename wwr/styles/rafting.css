@@ -33,7 +33,7 @@ footer {
 h1,
 h2 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
+    color: var(--accent1-color);
 }
 
 nav,
@@ -64,18 +64,16 @@ article {
     opacity: 0.7;
     /* left: 50px;*/
     background-color: var(--accent1-color);
-
     color: #fff;
 }
 
 .hero article {
     position: absolute;
-    top: 15px;
+    top: 100px;
     right: 25px;
     background-color: rgba(231, 236, 239, 0.8);
-    padding: 50px;
-    max-width: 300px;
-    height: 20px;
+    padding: 2rem;
+
 }
 
 .hero article img {
