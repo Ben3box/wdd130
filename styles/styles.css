@@ -63,7 +63,6 @@ aside img {
 footer {
     text-align: center;
     padding: 15px;
-    background: #333;
-    color: white;
+    background: var(--primary-color);
     margin-top: 20px;
 }
