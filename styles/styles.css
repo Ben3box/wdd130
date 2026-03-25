@@ -27,7 +27,7 @@ header a {
 
 header a:hover {
     text-decoration: underline;
-    color: var(--primary-color);
+    color: var(--accent2-color);
 }
 
 main {
