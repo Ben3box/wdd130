@@ -10,12 +10,17 @@
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
+    padding: 20px;
+    grid-template-columns: 3fr 1fr;
+    /*111*/
+    gap: 20px;
 }
 
 header {
     background-color: var(--heading-font);
     padding: 15px;
     text-align: justify;
+    grid-column: 1 / -1;
 }
 
 header a {
