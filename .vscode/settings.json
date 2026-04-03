@@ -60,7 +60,16 @@
   "terminal.integrated.initialHint": false,
   "cSpell.words": [
     "Dientes",
+    "emlpoyee",
     "Kirundi",
     "socialmedia"
-  ]
+  ],
+  "cSpell.customDictionaries": {
+    "custom-dictionary-workspace": {
+      "name": "custom-dictionary-workspace",
+      "path": "${workspaceFolder:wdd130-1}/.cspell/custom-dictionary-workspace.txt",
+      "addWords": true,
+      "scope": "workspace"
+    }
+  }
 }
