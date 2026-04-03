@@ -168,6 +168,7 @@ nav a {
 
 .hero article img {
     width: 125px;
+    float: right;
     border: 2px solid var(--accent2-color);
 }
 
