@@ -1,6 +1,6 @@
 :root {
     --primary-color: #e7ecef;
-    /*--secondary-color: #f4a261;*/
+    --secondary-color: #f4a261;
     --accent1-color: #264653;
     --accent2-color: #e9c46a;
     --heading-font: "Times New Roman", "Georgia", serif;
@@ -75,7 +75,7 @@ textarea {
 button {
     margin-top: 15px;
     padding: 10px 15px;
-    background-color: #4CAF50;
+    background-color: var(--secondary-color);
     color: white;
     border: none;
     border-radius: 5px;
