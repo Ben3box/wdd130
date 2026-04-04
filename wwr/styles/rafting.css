@@ -212,6 +212,22 @@ nav a {
     font-size: 0.9rem;
 }
 
+/* Styling for the map container */
+section p {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Styling for the map itself */
+iframe {
+    border: none;
+    /* This replaces style="border:0;" */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+    /* Ensures it doesn't break on mobile screens */
+}
+
 /* FOOTER */
 footer {
     display: flex;
