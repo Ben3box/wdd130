@@ -101,10 +101,6 @@ h2 {
     font-family: var(--heading-font);
 }
 
-iframe {
-    border: none;
-}
-
 .main-title {
     text-align: center;
 }
