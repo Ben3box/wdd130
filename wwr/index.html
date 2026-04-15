@@ -3,40 +3,113 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Benjamin Iriganje | WDD130</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <title>Trips | River Moss Expeditions</title>
+    <meta name="description" content="Explore rafting trips offered by River Moss Expeditions.">
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
-<body>
+<body class="trips-page">
+
+    <!-- HEADER (same as other pages) -->
     <header>
-        <nav class="navigation">
+        <img src="images/logo.jpg" alt="River Moss Logo">
+        <h1>River Moss Expeditions</h1>
+
+        <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="trips.html">Trips</a>
             <a href="contact.html">Contact Us</a>
         </nav>
     </header>
+
     <main>
-        <img src="images/profile.jpg" alt="Look carefully that'is my profile picture " width="300">
-        <p>Hello! My name is Benjamin Iriganje. I am from Bujumbura, Burundi. I enjoy speaking
-            languages including Kirundi as mother tongue, French and English as foreign languages,
-            and Kiswahili as a Bantu Langue</p>
+
+        <!-- CTA (FIXED) -->
+        <section class="cta">
+            <h2>Ready for Adventure?</h2>
+            <p>Book your rafting experience today with our expert guides.</p>
+
+            <a href="contact.html" class="cta-button">
+                Contact Us to Book
+            </a>
+        </section>
+
+        <!-- TRIP GRID (IMPROVED) -->
+        <section class="trip-grid">
+
+            <div class="trip-card">
+                <img src="images/Liemba'nın_şu_anki_durumu..jpg" alt="Beginner rafting trip">
+                <h3>Beginner River Ride</h3>
+                <p>Perfect for first-timers with calm and scenic waters.</p>
+            </div>
+
+            <div class="trip-card">
+                <img src="images/Liemba'nın_şu_anki_durumu..jpg" alt="Adventure rafting trip">
+                <h3>Adventure Rapids</h3>
+                <p>Moderate rapids for thrill seekers looking for fun.</p>
+            </div>
+
+            <div class="trip-card">
+                <img src="images/Liemba'nın_şu_anki_durumu..jpg" alt="Extreme rafting trip">
+                <h3>Extreme Expedition</h3>
+                <p>High-intensity rapids for experienced rafters only.</p>
+            </div>
+
+        </section>
+
+        <!-- TABLE (CLEAN VERSION) -->
+        <section class="trip-table-section">
+            <h2>Trip Comparison</h2>
+
+            <table class="trip-table">
+                <thead>
+                    <tr>
+                        <th>Trip</th>
+                        <th>Difficulty</th>
+                        <th>Duration</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Beginner Ride</td>
+                        <td>Easy</td>
+                        <td>2 Hours</td>
+                    </tr>
+                    <tr>
+                        <td>Adventure Rapids</td>
+                        <td>Medium</td>
+                        <td>4 Hours</td>
+                    </tr>
+                    <tr>
+                        <td>Extreme Expedition</td>
+                        <td>Hard</td>
+                        <td>6 Hours</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
     </main>
-    <aside>
-        <h2>Bujumbura</h2>
-        <img src="images/bujumbura.jpg"
-          alt="Look carefully that is the picture of our economic capital of my country"
-          width="300">
-        <p>Bujumbura is the economic capital of our country, Burundi. It is the most beautiful city
-            compared to other cities in the country. It i s located in the west of the country and
-            is bordered by the waters Lake Tanganyika. This city is the most visited, everyone
-            desirers
-            to visit and live in this city. Overall, it is very magnificent. </p>
-    </aside>
+
+    <!-- FOOTER (same across site) -->
     <footer>
-        <p>©2026 | Benjamin Iriganje | Bujumbura, Burundi</p>
+        <p>© 2026 River Moss Expeditions, Benjamin Iriganje</p>
+
+        <nav class="socialmedia">
+            <a href="https://facebook.com">
+                <img src="images/facebook.jpg" alt="Facebook Icon">
+            </a>
+            <a href="https://linkedin.com">
+                <img src="images/linkedin.jpg" alt="LinkedIn Icon">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.jpg" alt="Instagram Icon">
+            </a>
+        </nav>
     </footer>
+
 </body>
 
 </html>

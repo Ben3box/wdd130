@@ -1,59 +1,146 @@
+/* 1. ROOT VARIABLES (Defined once at the top) */
 :root {
     --primary-color: #e7ecef;
     --secondary-color: #f4a261;
     --accent1-color: #264653;
     --accent2-color: #e9c46a;
-    --heading-font: "Time New Roman", "Georgia", serif;
+    --heading-font: "Times New Roman", Georgia, serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
 
-body {
-    font-family: var(--body-font);
-    color: var(--accent1-color);
-    padding: 20px;
-    grid-template-columns: 3fr 1fr;
-    /*111*/
-    gap: 20px;
+/* 2. RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* 3. BODY */
+body {
+    font-family: var(--body-font);
+    line-height: 1.6;
+    color: var(--accent1-color);
+    background-color: #fff;
+}
+
+/* 4. GLOBAL LAYOUT */
+header,
+main,
+footer {
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* 5. HEADER (Updated to match your nav links) */
 header {
-    display: grid;
-    grid-template-columns: auto 1fr;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    background-color: var(--primary-color);
-    padding: 10px;
+    background: var(--accent1-color);
+    color: white;
+    padding: 15px 20px;
 }
 
 header img {
-    width: 100px;
+    width: 60px;
 }
 
 header a {
-    text-align: var(--primary-color);
-    margin: 16px;
+    color: white;
+    margin: 0 10px;
     font-weight: bold;
     text-decoration: none;
 }
 
 header a:hover {
-    text-decoration: underline;
     color: var(--accent2-color);
+    text-decoration: underline;
 }
 
+/* 6. HERO SECTION (Fixed Overlap and Separation) */
+.hero {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto 1fr;
+    align-items: center;
+    justify-items: center;
+    height: 90vh;
+    overflow: hidden;
+}
+
+/* Background image */
+.hero > img {
+    grid-column: 1 / -1;
+    grid-row: 1 / 3;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(60%);
+}
+
+/* Title bar */
+.hero h1 {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(38, 70, 83, 0.9);
+    color: white;
+    padding: 15px 0;
+    z-index: 1;
+}
+
+/* Article Box (Separating text and image) */
+.hero article {
+    grid-column: 2;
+    grid-row: 2;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    z-index: 1;
+    max-width: 600px;
+
+    /* Grid for internal separation */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    /* Space between sentence and image */
+}
+
+.hero article p {
+    grid-row: 1;
+    color: var(--accent1-color);
+    margin: 0;
+}
+
+.hero article img {
+    grid-row: 2;
+    justify-self: end;
+    /* Pushes image to the right */
+    width: 200px;
+    height: auto;
+    border: 3px solid var(--accent2-color);
+    border-radius: 5px;
+    position: static;
+    /* Removes absolute positioning */
+}
+
+/* 7. MAIN CONTENT (Profile page style) */
 main {
-    max-width: 800px;
-    margin: 20px auto;
     padding: 20px;
-    background: white;
-    border-radius: 8px;
 }
 
 main img {
     display: block;
     margin: 0 auto 15px;
-    border-radius: 50%;
+    border-radius: 10px;
+    /* Use 50% for a circle profile */
 }
 
+/* 8. ASIDE (Bujumbura section) */
 aside {
     max-width: 800px;
     margin: 20px auto;
@@ -63,16 +150,11 @@ aside {
     border-radius: 8px;
 }
 
-aside img {
-    width: 100%;
-    height: auto;
-    margin-top: 10px;
-    border-radius: 5px;
-}
-
+/* 9. FOOTER */
 footer {
     text-align: center;
     padding: 15px;
-    background: var(--primary-color);
+    background: var(--accent1-color);
+    color: white;
     margin-top: 20px;
 }

@@ -3,62 +3,119 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Booking a Trip</title>
-    <meta name="description" content="Booking a trip at Rafting Company ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trips | River Moss Expeditions</title>
+    <meta name="description"
+      content="Explore rafting trips offered by River Moss Expeditions in Bujumbura and Gatumba area.">
     <meta name="author" content="Benjamin">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
-    <header>
-        <header class="site-header">
-            <img src="images/logo.jpg" alt="River Moss Logo" class="logo">
 
-            <nav class="navigation">
-                <a href="index.html">Home</a>
-                <a href="about.html">About Us</a>
-                <a href="trips.html">Trips</a>
-                <a href="contact.html">Contact Us</a>
-            </nav>
-        </header>
+    <header class="site-header">
+        <img src="images/logo.jpg" alt="River Moss Logo" class="logo">
+
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
     </header>
+
     <main>
-        <div id="trip">
-            <h2><a href="contact.html">BOOK NOW</a></h2>
-            <p>Reservations can be made below with our booking widgets or via phone by simple
-                calling <strong>+257-68-605-786</strong> or Whatsapp calling
-                <strong>+257-66-88-94-82</strong> Reservations made online require at least 3 days
-                advanced notice. Some dates are unavailable if fully booked
+
+        <!-- CALL TO ACTION -->
+        <section class="cta">
+            <h1>Book Your Adventure Today</h1>
+            <p>
+                Reservations can be made via phone:
+                <strong>+257-68-605-786</strong> or WhatsApp:
+                <strong>+257-66-889-4-82</strong>.
+                Book at least 3 days in advance.
             </p>
-        </div>
-        <hr />
-        <div id="place">
-            <h3>MAIN BUJUMBURA TRIPS (GATUMBA AREA)</h3>
-            <figure>
-                <img src="images/boats.png" alt="--" width="200">
-                <figcaption><a href="contact.html">BOOK NOW</a></figcaption>
-            </figure>
-            <figure>
-                <img src="images/heros.jpg" alt="---" width="200">
-                <figcaption><a href="contact.html">BOOK NOW</a></figcaption>
-            </figure>
-        </div>
+            <a class="cta-button" href="contact.html">Contact Us to Book</a>
+        </section>
+
+        <!-- TRIP GRID -->
+        <section class="trip-grid">
+
+            <div class="trip-card">
+                <img src="images/boat.png" alt="River rafting adventure" width="200">
+                <h3>Gatumba Rapids Adventure</h3>
+                <p>Experience exciting Class III rapids in the scenic Gatumba region with trained
+                    guides.</p>
+                <a href="contact.html">Book Now</a>
+            </div>
+
+            <div class="trip-card">
+                <img src="images/hero.jpg" alt="White water rafting" width="200">
+                <h3>Bujumbura River Ride</h3>
+                <p>A thrilling ride through strong currents and beautiful river landscapes near
+                    Bujumbura.</p>
+                <a href="contact.html">Book Now</a>
+            </div>
+
+            <div class="trip-card">
+                <img src="images/river.png" alt="Extreme rafting experience" width="200">
+                <h3>Extreme Rapids Challenge</h3>
+                <p>For advanced adventurers only fast rapids and intense water conditions.</p>
+                <a href="contact.html">Book Now</a>
+            </div>
+
+        </section>
+
+        <!-- TRIP TABLE -->
+        <section class="trip-table-section">
+            <h2>Available Trips Overview</h2>
+
+            <table class="trip-table">
+                <tr>
+                    <th>Trip</th>
+                    <th>Duration</th>
+                    <th>Difficulty</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Gatumba Rapids</td>
+                    <td>2 Hours</td>
+                    <td>Moderate</td>
+                    <td>$50</td>
+                </tr>
+                <tr>
+                    <td>Bujumbura River Ride</td>
+                    <td>3 Hours</td>
+                    <td>Easy</td>
+                    <td>$65</td>
+                </tr>
+                <tr>
+                    <td>Extreme Rapids Challenge</td>
+                    <td>4 Hours</td>
+                    <td>Hard</td>
+                    <td>$90</td>
+                </tr>
+            </table>
+        </section>
+
     </main>
+
     <footer>
         <p>© 2026 River Moss Expeditions, Benjamin Iriganje</p>
+
         <nav class="socialmedia">
             <a href="https://facebook.com">
-                <img src="images/facebook.jpg" alt="Facebook Icon" width="200">
+                <img src="images/facebook.jpg" alt="Facebook Icon">
             </a>
             <a href="https://linkedin.com">
-                <img src="images/linkedin.jpg" alt="LinkedIn Icon" width="200">
+                <img src="images/linkedin.jpg" alt="LinkedIn Icon">
             </a>
             <a href="https://instagram.com">
-                <img src="images/instagram.jpg" alt="Instagram Icon" width="200">
+                <img src="images/instagram.jpg" alt="Instagram Icon">
             </a>
         </nav>
     </footer>
+
 </body>
 
 </html>
